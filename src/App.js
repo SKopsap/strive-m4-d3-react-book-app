@@ -1,29 +1,31 @@
-import React, { Component } from "react";
-import "./App.css";
+import React, { Component } from 'react'
+import './App.css'
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import WarningSign from "./components/WarningSign";
-import MyBadge from "./components/Badge";
-import BookList from "./components/BookList";
-
-import { fantasy } from "./assets/fantasy";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import WarningSign from './components/WarningSign'
+import MyBadge from './components/Badge'
+import BookList from './components/BookList'
+import { fantasy } from './assets/fantasy'
 
 class App extends Component {
   state = {
     fantasy: fantasy,
-
-    show: false,
-  };
+    show: false
+  }
 
   render() {
     return (
       <div className="App">
         {/* <WarningSign show={this.state.show} text="no emotions allowed!" /> */}
         {/* <MyBadge color="dark" text="be a robot" /> */}
+
+        <Form.Group>
+          <Form.Control size="sm" type="text" placeholder="Small text" />
+        </Form.Group>
         <BookList fantasy={this.state.fantasy} />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
