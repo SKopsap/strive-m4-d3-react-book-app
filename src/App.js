@@ -24,7 +24,7 @@ class App extends Component {
 
   render() {
     return (
-      <Container className="App">
+      <div className="App">
         {/* <WarningSign show={this.state.show} text="no emotions allowed!" /> */}
         {/* <MyBadge color="dark" text="be a robot" /> */}
 
@@ -41,7 +41,7 @@ class App extends Component {
           filterQuery={this.state.filterQuery}
           fantasy={this.state.fantasy}
         />
-      </Container>
+      </div>
     )
   }
 }
