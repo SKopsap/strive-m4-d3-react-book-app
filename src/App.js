@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import WarningSign from "./components/WarningSign";
 import MyBadge from "./components/Badge";
 import BookList from "./components/BookList";
-
+import HeaderContainer from "./containers/HeaderContainer";
 import { fantasy } from "./assets/fantasy";
 
 class App extends Component {
@@ -18,6 +18,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <HeaderContainer />
         {/* <WarningSign show={this.state.show} text="no emotions allowed!" /> */}
         {/* <MyBadge color="dark" text="be a robot" /> */}
         <BookList fantasy={this.state.fantasy} />
