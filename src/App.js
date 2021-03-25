@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import HeaderComponent from "./containers/HeaderContainer";
+
 import WarningSign from "./components/WarningSign";
 import MyBadge from "./components/Badge";
 import BookList from "./components/BookList";
@@ -25,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <HeaderContainer />
+        <HeaderComponent />
         {/* <WarningSign show={this.state.show} text="no emotions allowed!" /> */}
         {/* <MyBadge color="dark" text="be a robot" /> */}
 

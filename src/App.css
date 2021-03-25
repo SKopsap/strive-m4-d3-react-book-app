@@ -1,10 +1,14 @@
 .App {
+  height: 100%;
   padding: 20px;
   overflow-x: hidden;
   text-transform: uppercase;
   text-align: center;
   background-color: #996435;
   background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+}
+.form-group {
+  margin: 0;
 }
 .row {
   display: flex;
